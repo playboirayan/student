@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kids Hub | Learn & Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kids Hub</h1>
+        <nav>
+            <a href="#math">Math</a>
+            <a href="#science">Science</a>
+            <a href="#english">English</a>
+            <a href="#games">Games</a>
+            <a href="#stories">Stories</a>
+            <a href="#drawing">Drawing</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="math">
+            <h2>Math Fun</h2>
+            <p>Solve simple math quizzes and puzzles!</p>
+            <button onclick="startMathQuiz()">Start Quiz</button>
+            <div id="math-quiz"></div>
+        </section>
+
+        <section id="science">
+            <h2>Science Lab</h2>
+            <p>Learn about animals, plants, and the world around us.</p>
+            <ul>
+                <li>Why is the sky blue?</li>
+                <li>How do plants grow?</li>
+                <li>Fun animal facts!</li>
+            </ul>
+        </section>
+
+        <section id="english">
+            <h2>English Time</h2>
+            <p>Practice reading and spelling with stories and games.</p>
+            <button onclick="showStory()">Read a Story</button>
+            <div id="story"></div>
+        </section>
+
+        <section id="games">
+            <h2>Mini Games</h2>
+            <button onclick="playGame()">Play Memory Game</button>
+            <div id="game-area"></div>
+        </section>
+
+        <section id="stories">
+            <h2>Bedtime Stories</h2>
+            <p>Listen to or read short stories for kids.</p>
+            <audio controls>
+                <source src="assets/story1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="drawing">
+            <h2>Drawing Board</h2>
+            <canvas id="drawCanvas" width="300" height="200"></canvas>
+            <button onclick="clearCanvas()">Clear</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kids Hub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
